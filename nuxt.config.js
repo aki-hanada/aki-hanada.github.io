@@ -36,4 +36,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  scripts: {
+    predeploy: 'nuxt generate',
+    deploy: 'gh-pages -d dist',
+  },
 }
